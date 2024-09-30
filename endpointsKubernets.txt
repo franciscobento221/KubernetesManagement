@@ -1,0 +1,121 @@
+GET - http://localhost:8001/api/v1/nodes -> Listar todos os Nodes 
+GET - http://localhost:8001/api/v1/namespaces -> Listar todos namespaces
+GET - http://localhost:8001/api/v1/namespaces/ingress -> Listar o namespace com o nome ingress
+
+POST- http://localhost:8001/api/v1/namespaces -> Criar um namespace
+{
+  "apiVersion": "v1",
+  "kind": "Namespace",
+  "metadata": {
+    "name": "your-namespace-name"
+  }
+}
+
+DELETE - http://localhost:8001/api/v1/namespaces/{nome} -> Eliminar namespace
+
+GET - http://localhost:8001/api/v1/namespaces/{nomeNamespace}/pods/{nomePOD} -> Listar POD
+
+
+POST - http://localhost:8001/api/v1/namespaces/teste/pods -> Criar POD
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "gandapod" #tem de ser tudo em minuscula
+  },
+  "spec": {
+    "containers": [
+      {
+        "name": "nginx",
+        "image": "nginx:latest",
+        "ports": [
+          {
+            "containerPort": 80
+          }
+        ]
+      }
+    ]
+  }
+}
+
+DELETE- http://localhost:8001/api/v1/namespaces/{nomeNamespace}/pods/{nomePOD} -> Eliminar POD
+
+
+
+
+GET - http://localhost:8001/apis/apps/v1/namespaces/{nomeNamespace}/deployments/{deploymentName} - Listar Deployment
+
+GET - http://localhost:8001/apis/apps/v1/deployments - Listar todos os Deployments
+
+POST- http://localhost:8001/apis/apps/v1/namespaces/{nomeNamespace}/deployments - Criar Deployment
+{
+  "apiVersion": "apps/v1",
+  "kind": "Deployment",
+  "metadata": {
+    "name": "example-deployment"
+  },
+  "spec": {
+    "replicas": 3,
+    "selector": {
+      "matchLabels": {
+        "app": "example"
+      }
+    },
+    "template": {
+      "metadata": {
+        "labels": {
+          "app": "example"
+        }
+      },
+      "spec": {
+        "containers": [
+          {
+            "name": "nginx",
+            "image": "nginx:latest",
+            "ports": [
+              {
+                "containerPort": 80
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+
+DELETE - http://localhost:8001/apis/apps/v1/namespaces/{nomeNamespace}/deployments/{deploymentName} - Listar Deployment
+
+
+
+GET- http://localhost:8001/api/v1/namespaces/{nomeNamespace}/services/{nomeService} - Criar Service
+
+GET - http://localhost:8001/api/v1/services - Listar todos os services
+
+
+POST - http://localhost:8001/api/v1/namespaces/{nomeNamespace}/services - Criar Service
+{
+  "apiVersion": "v1",
+  "kind": "Service",
+  "metadata": {
+    "name": "example-service"
+  },
+  "spec": {
+    "selector": {
+      "app": "example"
+    },
+    "ports": [
+      {
+        "protocol": "TCP",
+        "port": 80,
+        "targetPort": 80
+      }
+    ]
+  }
+}
+
+DELETE - http://localhost:8001/api/v1/namespaces/{nomeNamespace}/services/{nomeService} - Eliminar Service
+
+
+
+

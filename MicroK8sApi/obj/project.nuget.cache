@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "pH2WB/VpUTYGi9qP4xLnM6rLOtw47C4QSehug9WA/+qXPL/+y4JM/U+MFGwKD8/xQ5Vr7c2njn2UjPhivH17Pw==",
+  "success": true,
+  "projectFilePath": "D:\\LTI\\Projeto2\\Kubernetes\\MicroK8sApi\\MicroK8sApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eng.Informatica\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "C:\\Users\\Eng.Informatica\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Eng.Informatica\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Eng.Informatica\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\Eng.Informatica\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Eng.Informatica\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Eng.Informatica\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
